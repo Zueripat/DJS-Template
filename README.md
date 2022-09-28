@@ -1,10 +1,12 @@
 # Discord Bot Template (Typescript & MySQL)
 
+## Discord
+
 Download the Repository by executing the following Command in your Terminal `git clone https://github.com/Zueripat/D.JS-Bot-Template.git`
 
 After installing the Source Code, you need to install the Dependencies. Navigat to the Folder where you cloned the Repository and execute the following Command `npm install` or `yarn install`
 
-Now you only have to fill in your Bot Token and your MySQL Credentials in the `.env` file and you are ready to go!
+Now you only have to fill in your Bot Token and your MySQL Credentials in the `.env` file.
 
 ## MySQL
 
@@ -25,3 +27,7 @@ Open the Terminal and run the following Commands:
 5: Restart the Docker Container
 
 Now you should be able to connect to your MySQL server from the MySQL Workstation and the Discord Bot
+
+## Start
+
+To now start the bot open the Terminal and navigat into the Folder, where all the code lies and execute the command `npm run start`
