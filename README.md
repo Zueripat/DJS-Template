@@ -12,8 +12,16 @@ Download Workbench: `https://dev.mysql.com/downloads/workbench/`
 
 Download Docker: `https://www.docker.com`
 
-After installing docker run `docker run --name=mysql mysql/mysql-server:latest` to create a MySQL Docker instance. 
+Open the Terminal and run the following Commands:
 
-Now Search for the automatically generated root pwd with the `docker logs mysql 2>&1 | grep GENERATED` Command
+1: `docker run -p 3306:3306 -p 33060:33060 --name=mysql57 -d mysql/mysql-server:5.7`
 
-This should be it... more on MySQL: `https://stackoverflow.com/questions/62072977/whats-default-password-in-docker-container-mysql-server-when-you-dont-set-one`
+2: `docker exec -it mysql57 mysql -uroot -p`
+
+3: `ALTER USER 'root'@'localhost' IDENTIFIED BY 'NEW_USER_PASSWORD';` Dont forget to change the Password
+
+4: `UPDATE mysql.user SET host = '%' WHERE user = 'root';`
+
+5: Restart the Docker Container
+
+Now you should be able to connect to your MySQL server from the MySQL Workstation and the Discord Bot
