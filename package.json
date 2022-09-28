@@ -1,0 +1,23 @@
+{
+  "name": "dbot",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/structures/index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "prod": "tsc && node build/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.5.0",
+    "dotenv": "^16.0.2",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/mysql": "^2.15.21",
+    "ts-node": "^10.9.1"
+  }
+}
