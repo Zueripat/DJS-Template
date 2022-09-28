@@ -20,11 +20,18 @@ export default async function registerApplicationCommands() {
     try {
         Log('Started refreshing application (/) commands.', 0, 'Load Commands');
 
-        await rest.put(
-            Routes.applicationGuildCommands(`${process.env.CLIENT_ID}`, `${process.env.GUILD_ID}`),
-            { body: commands.map((command: any) => command.data.toJSON()) },
-        );
-
+        if (process.env.GUILD_ID) {
+            await rest.put(
+                Routes.applicationGuildCommands(`${process.env.CLIENT_ID}`, `${process.env.GUILD_ID}`),
+                { body: commands.map((command: any) => command.data.toJSON()) },
+            );
+        } else {
+            await rest.put(
+                Routes.applicationCommands(`${process.env.CLIENT_ID}`),
+                { body: commands.map((command: any) => command.data.toJSON()) },
+            );
+        };
+        
         Log('Successfully reloaded application (/) commands.', 0, 'Load Commands');
     } catch (error) {
         console.error(error);
