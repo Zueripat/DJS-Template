@@ -28,6 +28,4 @@ Open the Terminal and run the following Commands:
 
 Now you should be able to connect to your MySQL server from the MySQL Workstation and the Discord Bot
 
-## Start
-
 To now start the bot open the Terminal and navigat into the Folder, where all the code lies and execute the command `npm run start`
