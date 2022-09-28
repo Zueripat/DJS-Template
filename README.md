@@ -15,3 +15,5 @@ Download Docker: `https://www.docker.com`
 After installing docker run `docker run --name=mysql mysql/mysql-server:latest` to create a MySQL Docker instance. 
 
 Now Search for the automatically generated root pwd with the `docker logs mysql 2>&1 | grep GENERATED` Command
+
+This should be it... more on MySQL: `https://stackoverflow.com/questions/62072977/whats-default-password-in-docker-container-mysql-server-when-you-dont-set-one`
