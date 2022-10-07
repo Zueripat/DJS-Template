@@ -1,6 +1,5 @@
-# Discord Bot Template TS & MySQL 
-
-![Typescript & MySQL](https://aristorinjuang.com/images/og/typescript_mysql.jpg)
+# Discord Bot Template TS & MySQL
+This is a template for a discord bot with typescript and mysql. It includes examples for commands, events, and a database connection. It also includes a `.env` for the bot token and database connection. This template is meant to be used with the [discord.js](https://discord.js.org/#/) library.
 
 ## Discord Setup
 
@@ -12,8 +11,6 @@
 5. Run `git clone https://github.com/Zueripat/DJS-Template.git` to clone the repository
 6. Open the folder in your IDE and run `npm install` to install all the dependencies
 7. Run `npm run start` to start the bot
-
-- [ ] Discord Setup
 
 ## MySQL Setup
 
@@ -28,3 +25,9 @@
 4. Finish the Discord Setup
 5. Open the `.env` file and fill in the MySQL credentials
 6. Run `npm run start` to start the bot
+
+## Check List
+- [ ] Discord Setup
+- [ ] MySQL Setup
+
+*If you have any questions, feel free to ask in the [Discord Server](https://discord.gg/ZAdxxMSVDk) or create an issue on this GitHub repository.*
