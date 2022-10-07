@@ -3,7 +3,6 @@ This is a template for a discord bot with typescript and mysql. It includes exam
 
 ## Discord Setup
 
----
 1. Create a new application on the [Discord Developer Portal](https://discord.com/developers/applications)
 2. Go to the Bot tab and create a new bot
 3. Copy the token and client ID and paste them into the `.env` file
@@ -14,7 +13,6 @@ This is a template for a discord bot with typescript and mysql. It includes exam
 
 ## MySQL Setup
 
----
 1. Download [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
 2. Download [Docker](https://www.docker.com/products/docker-desktop)
 3. Open your Terminal and run following Commands:
