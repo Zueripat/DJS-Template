@@ -10,12 +10,14 @@ const con = MySQL.createConnection({
 });
 
 async function query(sql: string) {
-  return new Promise((resolve, reject) => {
-    con.query(sql, (err, result) => {
-      if (err) reject(err);
-      resolve(result);
-    });
-  });
+  return con
+    ? new Promise((resolve, reject) => {
+        con.query(sql, (err, result) => {
+          if (err) reject(err);
+          resolve(result);
+        });
+      })
+    : null;
 }
 
 export default query;
